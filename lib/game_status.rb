@@ -38,7 +38,7 @@ def won?(board)
       return [win_combination[0],win_combination[1],win_combination[2]]
     elsif board[win_combination[0]]=="O" && board[win_combination[1]]=="O" && board[win_combination[2]]=="O"
       return [win_combination[0],win_combination[1],win_combination[2]]
-    else 
+    else
       return false 
     end
   end
