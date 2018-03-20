@@ -18,19 +18,6 @@ WIN_COMBINATIONS = [
 
 board = ["X","X","X","","","","","",""]
 
-def board_is_not_empty?(board)
-  count = 0
-  board.each do |element|
-    element == ""
-    count += 1
-  end
-  if count==8
-    return false
-  else
-    return true
-  end
-end
-
 def won?(board)
   WIN_COMBINATIONS.each do|win_combination|
     win_index_1 = win_combination[0]
@@ -43,8 +30,8 @@ def won?(board)
 
     if position_1=="X" && position_2=="X" && position_3=="X"
        return [win_index_1,win_index_2,win_index_3]
-    elsif !board_is_not_empty
-       return false
+    else
+       false
     end
   end
 end
