@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2,4,6]  #diagonal top R to bottom L
 ]
 
-board = ["X","X","X","","","","","",""]
+#board = ["X","X","X","","","","","",""]
 
 
 def won?(board)
