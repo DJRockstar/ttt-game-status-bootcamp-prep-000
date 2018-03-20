@@ -45,7 +45,7 @@ def full?(board)
       if(count==array_length)
         return true
       end
-    else
+    elsif(element=="")
       return false
     end
   end
