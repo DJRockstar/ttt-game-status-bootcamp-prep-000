@@ -34,7 +34,7 @@ def won?(board)
     # else
     #    false
     # end
-    
+    board[win_combination[0]]==board[win_combination[1]]==board[win_combination[2]]
 
 
   end
